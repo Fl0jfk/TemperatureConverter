@@ -1,7 +1,7 @@
 import { TextInput, Text, View } from 'react-native'
 import { styles } from './inputtemperature.style.js'
 
-export function InputTemperature ({ defaultValue, onChangeText }){
+export function InputTemperature ({ defaultValue, onChangeText, unit }){
     
     return (
         <View style={styles.view}>
@@ -13,7 +13,7 @@ export function InputTemperature ({ defaultValue, onChangeText }){
                 defaultValue={defaultValue} 
                 onChangeText={onChangeText}
             />
-            <Text style={styles.unit}>°C</Text>
+            <Text style={styles.unit}>{unit}</Text>
         </View>
         
     )        
